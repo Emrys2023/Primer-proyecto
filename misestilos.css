@@ -1,0 +1,21 @@
+#titulo {
+    font: bold 26px Verdana, sans-serif;
+    width: 30%;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font: bold 100px;
+    width: 30%;
+    min-width: 400px;
+    text-align: justify;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1%;
+    word-wrap: break-word;   
+    color: rgb(217, 168, 229);
+    background-color: brown;
+}
+
+body {
+    background-image: url(https://img.freepik.com/foto-gratis/rojo-marron-pared-ladrillo-vintage-estructura-decaida-horizontal-amplia-brickwall-fondo-textura-sucia-pared-pared-ladrillo-rojo-fachada-retro-casa-resumen-bandera-web-panoramica-superficie-stonewall_1253-1065.jpg?w=2000);
+}
