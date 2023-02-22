@@ -1,0 +1,45 @@
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    background-color: grey;
+    margin: 0px;
+    padding: 10px 0 70px 0;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+img {
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -64px;    
+    padding: 8px;
+    background-color: white;
+    z-index: 2;
+}
+
+.menu {
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 5px;
+          
+}
+
+nav {
+    position: relative;
+    background-color: rgb(65, 61, 61);
+    padding-top: 80px;
+    margin-top: -72px;
+    text-align: center;
+    z-index: 1;
+}
+
+body {
+    width: 1024;
+    height: 640;
+}
