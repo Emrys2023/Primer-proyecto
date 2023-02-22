@@ -1,5 +1,5 @@
 h1 {
-    color: whitesmoke;
+    color: #7ec9cc;
     text-align: center;
     font-size: 40px;
     background-color: grey;
@@ -17,13 +17,13 @@ img {
     margin-right: auto;
     margin-top: -64px;    
     padding: 8px;
-    background-color: white;
+    background-color: #d4f0f0;
     z-index: 2;
 }
 
 .menu {
     display: inline-block;
-    background-color: white;
+    background-color: #7ec9cc;
     border-radius: 20px;
     padding: 7px;
     margin: 5px;
@@ -40,6 +40,5 @@ nav {
 }
 
 body {
-    width: 1024;
-    height: 640;
+    background-color: #d4f0f0;
 }
