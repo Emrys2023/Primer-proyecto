@@ -42,3 +42,15 @@ nav {
 body {
     background-color: #d4f0f0;
 }
+
+#textPersonal {
+    color: crimson;
+}
+
+#textPersonal {
+    color: blue;
+}
+
+#textAcademica {
+    color: chartreuse;
+}
