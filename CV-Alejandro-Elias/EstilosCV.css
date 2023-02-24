@@ -52,8 +52,8 @@ body {
     column-count:3;
     color: rgb(5, 47, 95);
     text-align: center;
-    padding: 20px;
-    font-size: 3vw;
+    font-size: 30px;
+    word-wrap: break-word;
 }
 
 @media only screen and (max-width: 700px) {
@@ -63,18 +63,57 @@ body {
 }
 
 #textLaboral {
-    color: blue;
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textLaboral  {
+      column-count:1;
+    }
 }
 
 #textAcademica {
-    color: chartreuse;
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    column-gap: 20px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textAcademica  {
+      column-count:1;
+    }
+}
+
+#textHabilidades {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    column-gap: 20px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textAcademica  {
+      column-count:1;
+    }
 }
 
 article {
     margin-top: 10px;
     background-color: rgb(83, 185, 185, 0.3);
-    border-radius: 0 0 20px 20px;
-    padding: 10px 20px 10px 20px;
+    border-radius: 0 0 20px 20px; 
+    padding: 10px 20px 10px 20px; 
     border: #0a8a8f solid 2px;   
 }
 
@@ -131,3 +170,6 @@ footer {
     font-size: 30px;   
 }
 
+.linea {
+    text-decoration: underline;
+}
