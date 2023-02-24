@@ -4,12 +4,11 @@ h1 {
     font-size: 40px;
     background-color: grey;
     margin: 0px;
-    padding: 10px 0 70px 0;
-    font-family: 'Roboto Slab', serif;
-    
+    padding: 10px 0 60px 0;
+    font-family: 'Roboto Slab', serif;    
 }
 
-img {
+#curtis {
     position: relative;
     border-radius: 50%;
     display: block;
@@ -26,8 +25,12 @@ img {
     background-color: #7ec9cc;
     border-radius: 20px;
     padding: 7px;
-    margin: 5px;
-          
+    margin: 5px;          
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 nav {
@@ -36,6 +39,7 @@ nav {
     padding-top: 80px;
     margin-top: -72px;
     text-align: center;
+    border-color: #0a8a8f solid 1px;
     z-index: 1;
 }
 
@@ -43,14 +47,87 @@ body {
     background-color: #d4f0f0;
 }
 
-#textPersonal {
-    color: crimson;
+.textPersonal {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);
+    text-align: center;
+    padding: 20px;
+    font-size: 3vw;
 }
 
-#textPersonal {
+@media only screen and (max-width: 700px) {
+    .textPersonal {
+      column-count:1;
+    }
+}
+
+#textLaboral {
     color: blue;
 }
 
 #textAcademica {
     color: chartreuse;
 }
+
+article {
+    margin-top: 10px;
+    background-color: rgb(83, 185, 185, 0.3);
+    border-radius: 0 0 20px 20px;
+    padding: 10px 20px 10px 20px;
+    border: #0a8a8f solid 2px;   
+}
+
+#textprincipal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #30c2c7;
+}
+
+#textsecundario {
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer {
+    display: inline-block;
+}
+
+#whatsapp {
+    width: 60px;
+    position: absolute;   
+    display: inline-block;
+    margin-left: 230px;
+    margin-right: auto;
+    margin-top: 15px;      
+}
+
+#linkedin {
+    width: 60px;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 160px;
+    margin-right: auto;
+    margin-top: 15px;      
+}
+
+#facebook {
+    width: 60px;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 15px;      
+}
+
+#contacto {
+    width: 5%;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 30px;   
+}
+
