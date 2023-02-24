@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="EstilosCV.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4519/4519678.png">
+</head>
+<body>
+    <style>
+    
+    h1 {
+    color: #7ec9cc;
+    text-align: center;
+    font-size: 40px;
+    background-color: grey;
+    margin: 0px;
+    padding: 10px 0 60px 0;
+    font-family: 'Roboto Slab', serif;    
+}
+
+#curtis {
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -64px;    
+    padding: 8px;
+    background-color: #d4f0f0;
+    z-index: 2;
+}
+
+.menu {
+    display: inline-block;
+    background-color: #7ec9cc;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 5px;          
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav {
+    position: relative;
+    background-color: rgb(65, 61, 61);
+    padding-top: 80px;
+    margin-top: -72px;
+    text-align: center;
+    border-color: #0a8a8f solid 1px;
+    z-index: 1;
+}
+
+body {
+    background-color: #d4f0f0;
+}
+
+.textPersonal {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);
+    text-align: center;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 700px) {
+    .textPersonal {
+      column-count:1;
+    }
+}
+
+#textLaboral {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textLaboral  {
+      column-count:1;
+    }
+}
+
+#textAcademica {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    column-gap: 20px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textAcademica  {
+      column-count:1;
+    }
+}
+
+#textHabilidades {
+    display: flex;
+    column-count:3;
+    color: rgb(5, 47, 95);    
+    font-size: 30px;
+    word-wrap: break-word;
+    column-gap: 20px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    #textHabilidades  {
+      column-count:1;
+    }
+}
+
+article {
+    margin-top: 10px;
+    background-color: rgb(83, 185, 185, 0.3);
+    border-radius: 0 0 20px 20px; 
+    padding: 10px 20px 10px 20px; 
+    border: #0a8a8f solid 2px;   
+}
+
+#textprincipal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #30c2c7;
+}
+
+#textsecundario {
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer {
+    display: inline-block;
+}
+
+#whatsapp {
+    width: 55px;
+    position: absolute;   
+    display: inline-block;
+    margin-left: 180px;
+    margin-right: auto;
+    margin-top: 5px;      
+}
+
+#linkedin {
+    width: 55px;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-top: 5px;      
+}
+
+#facebook {
+    width: 55px;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 240px;
+    margin-right: auto;
+    margin-top: 5px;      
+}
+
+#contacto {
+    width: 5%;
+    position: absolute;    
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;   
+}
+
+.linea {
+    text-decoration: underline;
+}
+
+    </style>
+
+    
+    
+    <head>
+        <h1>Maurice Webb</h1>
+        <img id="curtis" src="https://randomuser.me/api/portraits/men/9.jpg" alt="Imagen de Curtis">
+    </head>
+    
+    <nav>        
+        <button type="button" id="personal" class="menu">Imformacion Personal </button>
+        <button type="button" id="laboral" class="menu">Experiencia Laboral </button>        
+        <button type="button" id="academica" class="menu">Imformacion Academica </button>
+        <button type="button" id="habilidades" class="menu">Otras Habilidades </button>               
+    </nav>
+
+    <article>
+        <script>
+
+document.getElementById('personal').addEventListener('click', function () {
+    document.getElementById('principal').style.display = 'none';
+    document.getElementById('textPersonal').style.display = 'block';
+    document.getElementById('textLaboral').style.display = 'none';
+    document.getElementById('textAcademica').style.display = 'none';
+    document.getElementById('textHabilidades').style.display = 'none';
+})
+
+document.getElementById('laboral').addEventListener('click', function () {
+    document.getElementById('principal').style.display = 'none';
+    document.getElementById('textPersonal').style.display = 'none';
+    document.getElementById('textLaboral').style.display = 'block';
+    document.getElementById('textAcademica').style.display = 'none';
+    document.getElementById('textHabilidades').style.display = 'none';
+})
+
+document.getElementById('academica').addEventListener('click', function () {
+    document.getElementById('principal').style.display = 'none';
+    document.getElementById('textPersonal').style.display = 'none';
+    document.getElementById('textLaboral').style.display = 'none';
+    document.getElementById('textAcademica').style.display = 'block';
+    document.getElementById('textHabilidades').style.display = 'none';
+})
+
+document.getElementById('habilidades').addEventListener('click', function () {
+    document.getElementById('principal').style.display = 'none';
+    document.getElementById('textPersonal').style.display = 'none';
+    document.getElementById('textLaboral').style.display = 'none';
+    document.getElementById('textAcademica').style.display = 'none';
+    document.getElementById('textHabilidades').style.display = 'block';
+})
+
+        </script>
+
+        <div id="principal">
+            <p id="textprincipal">Sobre mi:</p>
+            <p id="textsecundario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies erat ac nisl rutrum viverra. In fringilla faucibus metus, ut viverra lectus pellentesque sit amet. Nullam ut lacus eget ipsum tincidunt porttitor. Vivamus risus nulla, congue sed erat quis, dictum scelerisque urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus fermentum, ipsum eu accumsan volutpat, est eros posuere tortor, id facilisis leo nunc a ex. Donec mollis lacus placerat venenatis accumsan. Aenean consectetur sapien metus, nec semper nulla posuere id.
+
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer non sapien in massa lobortis rutrum. Nunc a lacus tincidunt, volutpat nisl sed, imperdiet dolor. In hac habitasse platea dictumst. Curabitur sagittis, ante ut auctor consequat, enim magna fermentum magna, eu interdum mi leo in urna. Quisque suscipit ultricies placerat. Vivamus in diam magna. Vestibulum congue in sem a mollis. Morbi quis nisi tempus, molestie justo nec, rutrum nulla. Cras tincidunt, ligula quis convallis posuer.
+            
+            </p>
+
+        </div>       
+        <div id="textPersonal" class="textPersonal" style="display: none;">           
+            
+            <img id="direccion" src="https://cdn-icons-png.flaticon.com/128/3202/3202998.png" alt="imagen direccion"/>
+            <p >7030 Stevens Creek Blvd</p>
+            <img id="correo" src="https://cdn-icons-png.flaticon.com/128/482/482138.png" alt="imagen correo"/>
+            <p>maurice.webb@example.com</p>
+            <img id="telefono" src="https://cdn-icons-png.flaticon.com/128/2954/2954448.png" alt="imagen telefono"/>
+            <p>(823) 514-8166</p>
+
+            <p></p>
+        </div>
+
+        <div id="textLaboral" style="display: none;">      
+                  
+            <ul>
+                <li class="linea">Esta es una empresa</li>
+                <ul>
+                    <li>Esto es un cargo</li>
+                    <li>Estas son tareas realizadas</li>
+                    <li>Esto es una direccion</li>
+                    <li>Esto es una referencia</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <br>
+                <li class="linea">Esta es una empresa</li>
+                <ul>
+                    <li>Esto es un cargo</li>
+                    <li>Estas son tareas realizadas</li>
+                    <li>Esto es una direccion</li>
+                    <li>Esto es una referencia</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <br>
+                <li class="linea">Esta es una empresa</li>
+                <ul>                    
+                    <li>Esto es un cargo</li>
+                    <li>Estas son tareas realizadas</li>
+                    <li>Esto es una direccion</li>
+                    <li>Esto es una referencia</li>
+                </ul>
+            </ul>
+        </div>
+        
+        <div id="textAcademica" style="display: none;">      
+                  
+            <ul>
+                <li class="linea">Esto es un titulo/nivel educativo</li>
+                <ul>
+                    <li>Esto es una fecha</li>
+                    <li>Esto es un instituto</li>
+                    <li>Conocimientos adquiridos</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <br>
+                <li class="linea">Esto es un titulo/nivel educativo</li>
+                <ul>
+                    <li>Esto es una fecha</li>
+                    <li>Esto es un instituto</li>
+                    <li>Conocimientos adquiridos</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <br>
+                <li class="linea">Esto es un titulo/nivel educativo</li>
+                <ul>
+                    <li>Esto es una fecha</li>
+                    <li>Esto es un instituto</li>
+                    <li>Conocimientos adquiridos</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div id="textHabilidades" style="display: none;">      
+                  
+            <ul>
+                <li class="linea">Esto son cursos realizado</li>
+                <ul>
+                    <li>Esto es una fecha</li>
+                    <li>Esto es un instituto</li>
+                    <li>Conocimientos adquiridos</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <br>
+                <li class="linea">Esto son mas cursos realizado</li>
+                <ul>
+                    <li>Esto es una fecha</li>
+                    <li>Esto es un instituto</li>
+                    <li>Conocimientos adquiridos</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <br>
+                <li class="linea">Esto son habilidades blandas</li>
+                <ul>
+                    <li>Una Habilidad</li>
+                    <li>Otra habilidad</li>
+                    <li>Otra habilidad</li>
+                </ul>
+            </ul>
+        </div>        
+        
+    </article>
+
+    <footer>        
+            <label id="contacto">Contactame:</label>
+            <a title="linkedin" href="https://www.linkedin.com/in/perfil-de-muestra-596394214/?originalSubdomain=ar"><img id="linkedin" src="https://cdn-icons-png.flaticon.com/128/4494/4494471.png" alt="imagen linkedin" /></a>
+            <a title="whatsapp" href="https://wa.me/34942837285"><img id="whatsapp" src="https://cdn-icons-png.flaticon.com/128/1384/1384007.png" alt="imagen whatsapp" /></a>
+            <a title="whatsapp" href="https://www.facebook.com"><img id="facebook" src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="imagen facebook" /></a>        
+    </footer>
+
+</body>
+</html>
